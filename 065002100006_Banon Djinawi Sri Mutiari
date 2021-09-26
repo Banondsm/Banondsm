@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 26 11:43:14 2021
+#'praktikum1'
+#'BanonDjinawiSriMutiari'
+#'NIM : 065002100006'
+#'Tugas Algoritma'
+#'judul : Praktikum Algoritma Pemograman'
+
+"""
+
+#'assigment statement'
+#'pernyataan penugasan, di tugaskan, menugaskan dan bertugaskan'
+
+f=input("siapasih nama kamu?")
+p=float(input("berapakah panjang meter ruang kelas itu?"))
+l=float(input("berapakah lebar ruang kelas itu?"))
+L=p*l #ekspresi
+print("luas ruang kelas itu adalah", str(L))
+
+
