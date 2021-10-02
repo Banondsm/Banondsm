@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct  1 22:57:49 2021
+
+@author: admin
+"""
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct  1 22:57:49 2021
+#'Praktikum 2 Latihan 2'
+#'Banon Djinawi Sri Mutiari'
+#'NIM : 065002100006'
+
+"""
+import math 
+print("Hallo, welcome!")
+print("hari ini saya akan menghitung jarak antara dua titik di permukaan bumi")
+lat1=float(input("put lattitude coordinate first ="))
+lon1=float(input("put longitude coordinate first ="))
+lat2=float(input("put lattitude coordinate second ="))
+lon2=float(input("put longitude coordinate second ="))
+
+#'masuk rumus'
+dlon=(lon2-lon1)
+dlat=(lat2-lat1)
+p=math.sin(math.radians(dlon/2))**2+math.cos(math.radians(lat1))*math.cos(math.radians(lat2))*math.sin(math.radians(dlat/2))**2
+q=2*math.asin(math.sqrt(p))          
+r=6371.01*q
+print( r, "kilometer")
+
+
+
