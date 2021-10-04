@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  4 13:19:13 2021
+@praktikum 3 latihan 3
+@Banon Djinawi Sri Mutiari
+@NIM    : 065002100006
+@Materi : Algoritma Pemograman
+@judul  : Menghitung segitiga sama kaki, sisi, dan sembarang
+
+"""
+
+print("Hallo, welcome!")
+print("Menentukan jenis sebuah segitiga")
+
+a=int(input("Masukkan sisi ke 1 :"))
+b=int(input("Masukkan sisi ke 2 :"))
+c=int(input("Masukkan sisi ke 3 :"))
+
+if(a==b==c):
+    print("ini merupakan segitiga sama sisi")
+elif((a + b <= c) or (a + c <= b) or (b + c <= a)):
+    print("ini bukan merupakan segitiga ")
+elif((a == b) or (a == c) or (b == c)):
+    print("ini Merupakan jenis segitiga sama kaki")
+else:
+    print("ini merupakan segitiga sembarang")
+   
