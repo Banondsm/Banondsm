@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+
+@Judul  : Praktikum 3
+@Materi : Control Strukture
+@author : Banon Djinawi Sri Mutiari
+@NIM    : 065002100006
+
+"""
+import math
+
+print("Mencari Persamaan Kuadrat Dan Determinan")
+A=int(input("Masukkan Nilai A :"))
+B=int(input("Masukkan Nilai B :"))
+C=int(input("Masukkan Nilai c :"))
+
+D =(B * B) - (4 * A * C)
+if (A == 0):
+    print("Bukan Persamaan Kuadrat")
+    
+elif(D > 0) :
+        x1 = (-B + math.sqrt(D)) / (2 * A)
+        x2 = (-B + math.sqrt(D)) / (2 * A)
+        print("Merupakan Jenis Akar Yang Berbeda")
+        print("maka persamaan kuadratnya adalah",x1,"dan",x2)
+        print("Determinan :" , D)
+        
+elif(D == 0) :
+        x1 = (-B) / (2 * A)
+        x2 = (-B) / (2 * A)
+        print("merupakan jenis akar yang kembar")
+        print("maka persamaan kuadratnya adalah",x1,"dan",x2)
+        print("Determinan :" , D)
+              
+elif(D < 0) : 
+       print("Merupakan Akar Imaginer")
+       print("Determinan :" , D)
+       print("Akar x1 = -'B' + Akar',D,/B * A")
+       print("Akar x2 = -'B' - Akar',D,/B * A")
