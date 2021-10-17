@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 17 21:13:03 2021
+@Praktikum 4
+@Materi       : Algoritma Dan Pemograman
+@Hari/Tanggal : Minggu, 17 Oktober 2021
+@author       : Banon Djinawi Sri Mutiari
+@NIM          : 065002100006
+
+"""
+print("Masukkan -1 untuk menghentikan program")
+P = True
+while P == True:
+    B = int(input("Masukkan Bulan Dari (1-12) : "))
+    if B > 12 or B <= -2 or B == 0:
+        print("Nilai yang dimasukkan tidak valid : ", B, '')
+    elif B == 1 or B == 3 or B == 5 or B == 7 or B == 8 or B == 10 or B == 12:
+        print("Pada Bulan Ini Memiliki 31 Hari")
+        print("Masukkan -1 untuk menghentikan program")
+    elif B == 2:
+        T = int(input("Masukkan Tahunnya : "))
+        if (T % 4 == 0 and B == 2):
+             print("Pada Bulan Ini Memiliki 29 Hari")
+             print("Masukkan -1 untuk menghentikan program")
+        else:
+            print("Pada Bulan Ini Memiliki 28 Hari")
+            print("Masukkan -1 untuk menghentikan program")
+    elif B == 4 or B == 6 or B == 9 or B == 11:
+        print("Pada Bulan Ini Memiliki 30 Hari")
+        print("Masukkan -1 untuk menghentikan program")
+        
+    elif B == -1:
+        P = False
+        print("Sekian Terima Kasih Telah Menggunakan Program Tersebut")
+        
