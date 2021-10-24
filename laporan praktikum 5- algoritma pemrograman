@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 24 16:55:58 2021
+@Praktikum 5
+@Materi       : Algoritma Dan Pemograman
+@Judul        : Struktur Kendali
+@Hari/Tanggal : Minggu, 24 Oktober 2021
+@author       : Banon Djinawi Sri Mutiari
+@NIM          : 065002100006
+
+"""
+
+print("Hallo, Selamat Datang")
+print("Pada Program Ini Saya Akan menghitung harga tiket masuk ke kebun binatang sesuai dengan umurnya :")
+
+N = 0
+jumlah = 0
+P = 0
+
+while(N!='') :
+    N=int(input("Masukkan Umurnya : "))
+    P+=1
+    print("Input Angka 0 Untuk Menghitungnya ")
+    
+    if( N == 0 ) :
+        break;
+    elif( N <= 2 ) :
+        print("Free")
+        jumlah += 0
+        print("jalankan Total", jumlah)
+    elif( N >= 3 and N <= 12) :
+        jumlah += 14.00
+        print("$14.00")
+        print("jalankan total", jumlah)
+    elif( N >= 66 ) :
+        jumlah += 18.00
+        print("$18.00")
+        print("jalankan total", jumlah)
+    else:
+        jumlah += 23.00
+        print("$23.00")
+        print("jalankan total", jumlah)
+        
+uang=int(input("Masukkan total uang-Nya : "))  
+print("jalankan kembaliannya : ", uang-jumlah)     
+    
