@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  8 15:31:42 2021
+@Praktikum 8
+@Materi       : fungsi (Function)
+@Judul        : Praktikum 8 latihan 1
+@Hari/Tanggal : senin, 08 November 2021
+@author       : Banon Djinawi Sri Mutiari
+@NIM          : 065002100006
+
+"""
+
+def bilangan_prima(angka):
+    if angka > 1:
+        prima(angka)
+    else:
+        print(angka, "merupakan bilangan prima")
+def prima(angka):
+    for x in range(2,angka):
+             if (angka % x) == 0:
+                 print(angka,"bukan merupakan bilangan prima")
+                 print("karena", x ,"dikalikan",angka// x ,"hasilnya adalah",angka)
+                 break
+
+    else:
+        print(angka,"merupakan bilangan prima")
+    
+a = 1
+while a == 1 :
+    angka = int(input("input bilangan = "))
+    bilangan_prima(angka)
