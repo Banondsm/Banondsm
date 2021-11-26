@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+@Materi       : File Handling
+@Judul        : Praktikum 10 lat.1 (modul 9)
+@Hari/Tanggal : Jum'at, 26 November 2021
+@author       : Banon Djinawi Sri Mutiari
+@NIM          : 065002100006
+@Prodi        : Sistem Informasi
+
+"""
+
+def edit():
+    
+    biodata = open("Biodata.txt",'w')
+    biodata.write(str())
+    biodata.close()
+    
+Name = str(input("Masukan nama mu: "))
+Age = str(input("Masukan umur mu : "))
+Addres = str(input("Masukan alamat mu : "))
+Email = str(input("Masukan email : "))
+Dosen = str(input("Masukan wali dosen mu : "))
+
+def hasil():
+    
+    baca = open("Biodata.txt",'r')
+    text = baca.read()
+    print(text)
+    baca.close()
+    
+print("berikut adalah data kamu")
+print(Name)
+print(Age)
+print(Addres)
+print(Email)
+print(Dosen)
