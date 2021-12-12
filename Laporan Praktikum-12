@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+@Materi       : Object Oriented Programming Pada Python
+@Judul        : Laporan Praktikum 12 lat.2 (modul 11)
+@Hari/Tanggal : minggu, 12 Desember 2021
+@author       : Banon Djinawi Sri Mutiari
+@NIM          : 065002100006
+@Prodi        : Sistem Informasi
+
+"""
+class mahasiswa:
+    
+    def __init__(self,value,nama):
+        
+        self.value = value
+        self.nama = nama
+        
+    
+    def ubah(self): 
+        
+        print("Nama Mu Adalah : " + self.nama)
+        print("print nilai Mu adalah : " + str(self.value))
+       
+             
+
+perulangan = 0 
+
+while perulangan == 0 :
+    
+    print("==== Program OOP ==== ")
+    print("1.Menyatakan Objek")
+    print("2.Menampilkan Objek")
+    print("3.Mengganti Objek")
+    print("4.Menghapus Objek")
+    print("5.Menutup Program")
+    
+    Option = int(input("Masukan Pilihan Mu (1/2/3/4/5) : "))
+    
+    if Option == 1 :
+        
+        nama = str(input("Masukan Nama Mu : "))
+        value = str(input("Masukan Nilai Mu : "))
+        biodata = mahasiswa(value,nama)
+        print("Data Telah Berhasil Ditambahkan")
+        
+    elif Option == 2 :
+        
+        biodata = mahasiswa(value,nama)
+        biodata.ubah()
+        
+    elif Option == 3 :
+        
+        p ="nama"
+        q ="nilai"
+        
+        perubahan=input("Apa yang ingin kamu rubah (Nama/Nilai) : ")
+        
+        if(perubahan == p):
+            
+            nama = input("masukan namamu :")
+            print("data telah berhasil di rubah")
+            
+        elif(perubahan == q):
+            
+            nilai = input("masukan nilaimu :")
+            print("data telah berhasil di rubah")
+            
+    elif Option == 4 :
+        
+        nama = "none"
+        nilai = "none"
+        print("data telah berhasil di hapus")
+        
+    elif Option == 5:
+        print("terima kasih anda telah menggunakan program ini")
+        break
