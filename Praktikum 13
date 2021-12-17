@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+@Materi       : Pengantar Data Science
+@Judul        : Praktikum 13 lat.1 (modul 12)
+@Hari/Tanggal : Jumat, 17 Desember 2021
+@author       : Banon Djinawi Sri Mutiari
+@NIM          : 065002100006
+@Prodi        : Sistem Informasi
+
+"""
+import pandas as pd
+
+data = {'Negara': ['Indonesia', 'Jepang', 'India', 'China', 'Amerika Serikat', 'Brazil', 'Rusia', 'Meksiko', 'Nigeria', 'Jerman', 'Aljazair', 'Inggris'],
+        'Ibu Kota': ['Jakarta', 'Tokyo', 'New Delhi', 'Beijing', 'Washington, D.C.', 'Brazilia', 'Moskow', 'Meksiko City', 'Abuja', 'Berlin', 'Aljazair', 'London'],
+        'Benua': ['Asia', 'Asia', 'Asia', 'Asia', 'Amerika', 'Amerika', 'Asia', 'Amerika', 'Afrika', 'Eropa', 'Afrika', 'Eropa'],
+        'Luas': [1905, 377, 3287, 9597, 9834, 8515, 17098, 1964, 923, 357, 2381, 242],
+        'Populasi': [264, 143, 1252, 1357, 329, 210, 146, 126, 200, 83, 43, 66]}
+
+Dataf = pd.DataFrame(data)
+mean = Dataf.groupby(['Benua']).mean()
+std = Dataf.groupby(['Benua']).std()
+
+print('Berikut merupakan Data data Framenya : ')
+print(Dataf)
+print('')
+print('Berikut merupakan Data Mean : ')
+print(mean)
+print('')
+print('Berikut merupakan Data Standard Deviation : ')
+print(std)
+print('')
