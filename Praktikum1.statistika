@@ -1,0 +1,12 @@
+data_banon=read.delim("clipboard")
+View(data_banon)
+mean(data_banon$T.Badan)
+str(data_banon)
+
+data_banon_csv = read.csv("C:/Users/asus/Documents/prakstatistika/bahanpraktikum1.csv")
+View(data_banon_csv)
+
+install.packages("xlsx")
+library("xlsx")
+data_banon_xlsx= read.xlsx("C:/Users/asus/Documents/prakstatistika/bahanpraktikum1.xlsx",1)
+View(data_banon_xlsx)
