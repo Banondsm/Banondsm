@@ -1,0 +1,5 @@
+banon=read.delim("clipboard")
+View(banon)
+str(banon)
+mean(banon$Pendapatan)
+t.test(banon$Pendapatan, mu=14500)
