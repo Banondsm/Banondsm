@@ -1,0 +1,4 @@
+data_banon=read.csv("C:/Users/asus/Documents/prakstatistika/houseprices.csv")
+View(data_banon)
+qplot(data_banon$Price, data_banon$Bedrooms)
+plot(data_banon$Price, data_banon$Bedrooms)
