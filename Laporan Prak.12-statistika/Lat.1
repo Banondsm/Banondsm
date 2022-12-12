@@ -1,0 +1,4 @@
+df_Banon=read.delim("clipboard")
+head(df_Banon)
+model_reg=lm(df_Banon$Y~df_Banon$X)
+summary(model_reg)
