@@ -1,0 +1,3 @@
+#Latihan kedua(2)
+by(df_Banon$Price, df_Banon$Neighborhood, mean)
+by(df_Banon$Price, df_Banon$Brick, mean)
