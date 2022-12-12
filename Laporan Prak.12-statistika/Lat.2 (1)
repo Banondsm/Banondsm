@@ -1,0 +1,7 @@
+#latihan kedua(1)
+df_Banon=read.delim("clipboard")
+df_Banon$Brick_dummy<-ifelse(df_Banon$Brick=="YES", 1,0)
+df_Banon$N_dummy1<-ifelse(df_Banon$Neighborhood=="West", 1,0)
+df_Banon$N_dummy2<-ifelse(df_Banon$Neighborhood=="North", 1,0)
+model=lm(df_Banon$Price~df_Banon$SqFt+df_Banon$Bedrooms+df_Banon$Brick_dummy+df_Banon$N_dummy1+df_Banon$N_dummy2)
+summary(model)
