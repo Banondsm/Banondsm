@@ -1,0 +1,9 @@
+#latihan Kedua
+df_Banon=PlantGrowth
+View(df_Banon)
+#analisis anova
+model <- aov(weight~group, data=df_Banon)
+summary(model)
+#Analisis Tukey Test
+tukey.test <- TukeyHSD(model)
+tukey.test
