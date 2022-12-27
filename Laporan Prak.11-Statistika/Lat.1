@@ -1,7 +1,7 @@
 #latihan pertama
-df_afni = read.delim("clipboard")
-head(df_afni)
-model <- aov(korosi~metode, data=df_afni)
+df_Banon = read.delim("clipboard")
+head(df_Banon)
+model <- aov(korosi~metode, data=df_Banon)
 summary(model)
 tukey.test <- TukeyHSD(model)
 tukey.test
